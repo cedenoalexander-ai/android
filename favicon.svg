@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="displayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Base with rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="none" stroke="#334155" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Venezuelan subtle tri-color accent bar at top -->
+  <g transform="translate(156, 64)">
+    <rect x="0" y="0" width="200" height="4" rx="2" fill="#facc15" />
+    <rect x="0" y="5" width="200" height="4" rx="2" fill="#2563eb" />
+    <rect x="0" y="10" width="200" height="4" rx="2" fill="#dc2626" />
+  </g>
+
+  <!-- Gas Pump Body -->
+  <g filter="url(#shadow)">
+    <!-- Main Pump Housing -->
+    <rect x="120" y="100" width="220" height="320" rx="28" fill="url(#amberGrad)" />
+    
+    <!-- Base Plate -->
+    <rect x="100" y="400" width="260" height="28" rx="12" fill="#334155" />
+
+    <!-- Digital Display Screen -->
+    <rect x="144" y="136" width="172" height="110" rx="16" fill="url(#displayGrad)" stroke="#475569" stroke-width="3" />
+    
+    <!-- Screen Text: $0.50 USD / Bs. -->
+    <text x="230" y="174" fill="#fbbf24" font-family="monospace, sans-serif" font-weight="900" font-size="28" text-anchor="middle" letter-spacing="1">$0.50</text>
+    <text x="230" y="196" fill="#94a3b8" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">USD / LITRO</text>
+    <rect x="160" y="206" width="140" height="1" fill="#334155" />
+    <text x="230" y="228" fill="#38bdf8" font-family="monospace, sans-serif" font-weight="800" font-size="16" text-anchor="middle">TASA BCV</text>
+
+    <!-- Fuel Pump Emblem / Nozzle Cradle Area -->
+    <rect x="156" y="270" width="148" height="110" rx="16" fill="#0f172a" fill-opacity="0.25" />
+    
+    <!-- Fuel Drop Graphic -->
+    <path d="M230 286 C230 286 208 316 208 332 C208 344 218 354 230 354 C242 354 252 344 252 332 C252 316 230 286 230 286 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Hose and Nozzle on the right -->
+  <g>
+    <!-- Hose curve -->
+    <path d="M340 240 C410 240 430 310 430 370 C430 420 380 430 360 410" fill="none" stroke="#475569" stroke-width="20" stroke-linecap="round" />
+    <path d="M340 240 C410 240 430 310 430 370 C430 420 380 430 360 410" fill="none" stroke="#1e293b" stroke-width="12" stroke-linecap="round" />
+
+    <!-- Nozzle Handle Hanging -->
+    <g transform="translate(360, 160)">
+      <path d="M10 0 L40 0 C46 0 50 4 50 10 L50 70 C50 76 46 80 40 80 L30 80 L30 110 L15 110 L15 75 L10 75 C4 75 0 71 0 65 L0 10 C0 4 4 0 10 0 Z" fill="#334155" />
+      <!-- Spout -->
+      <path d="M25 0 L25 -30 L5 -50" fill="none" stroke="#64748b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="8" y="20" width="34" height="40" rx="6" fill="#fbbf24" />
+    </g>
+  </g>
+</svg>
